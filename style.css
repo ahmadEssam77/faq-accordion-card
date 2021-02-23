@@ -1,0 +1,65 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Background Style */
+body {
+    background-image: linear-gradient(hsl(273, 75%, 66%) , hsl(240, 73%, 65%));
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+/* Wrapper Style */
+.wrapper {
+    width: 70%;
+    height: auto;
+    margin: 25px auto;
+    background: #fff;
+    border-radius: 10px;
+}
+
+
+/* Mobile First - Media Query */
+@media (max-width: 377px) {
+    .wrapper {
+        position: relative;
+        top: 20%;
+        padding: 10px;
+    }
+
+    .wrapper .logo-section .for-mobile-1 {
+        position: absolute;
+        top: -110px;
+        left: -20px;        
+    }
+
+    .wrapper .faq-section .heading {
+        font-family: "Kumbh Sans";
+        text-align: center;
+        margin: 25px 0;
+        font-weight: 600;
+    }
+
+    .wrapper .faq-section p {
+        font-size: 12px;
+        color: hsl(238, 29%, 16%);
+        line-height: 50px;
+        font-family: "Kumbh Sans";
+    }
+
+    .wrapper .faq-section .arrow {
+        float: right;
+        margin: 20px 5px 0 0;
+    }
+
+    .wrapper .faq-section .divider {
+        background: hsl(240, 5%, 91%);
+        border: none;
+        height: 0.5px;
+    }
+}
