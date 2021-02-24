@@ -11,21 +11,80 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 /* Wrapper Style */
 .wrapper {
-    width: 70%;
-    height: auto;
-    margin: 25px auto;
+    width: 60%;
+    height: 500px;
+    margin: 90px auto 0 auto;  /* I'll come to this point again later */
     background: #fff;
     border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;  /* I'll come to this point again later */
+}
+
+/* Design Section Style */
+/* Adjust the designs to match the main design */
+.design-section {
+    width: 30%;
+    position: relative;
+    top: -50px;
+    left: -600px;
+}
+
+
+.design-section .bg-pattern {
+    position: relative;
+    top: -20px;
+    left: -80px;
+}
+
+.design-section .illustration-women {
+    position: absolute;
+    top: 345px;
+    left: 430px;
+}
+
+.design-section .box {
+    position: absolute;
+    top: 490px;
+    left: 400px;
+}
+
+/* Faq Section Style */
+.faq-section .heading {
+    font-family: "Kumbh Sans";
+    text-align: center;
+    margin: 25px 0;
+    font-weight: 600;
+
+}
+
+.faq-section p {
+    font-size: 16px;
+    color: hsl(238, 29%, 16%);
+    line-height: 50px;
+    font-family: "Kumbh Sans";
+}
+
+.faq-section .arrow {
+    float: right;
+    margin: 20px 0 0 25px;
+}
+
+.faq-section .divider {
+    background: hsl(240, 5%, 91%);
+    border: none;
+    height: 0.5px;
 }
 
 
 /* Mobile First - Media Query */
-@media (max-width: 377px) {
+/* @media (max-width: 377px) {
     .wrapper {
         position: relative;
         top: 20%;
@@ -61,5 +120,5 @@ body {
         background: hsl(240, 5%, 91%);
         border: none;
         height: 0.5px;
-    }
-}
+    } 
+}*/
