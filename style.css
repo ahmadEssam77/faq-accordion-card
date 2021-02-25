@@ -97,6 +97,41 @@ body {
     margin-top: 5px;
 }
 
+/* New Media Query */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .wrapper {
+        display: block;
+    }
+
+    .design-section {
+        width: 100%;
+    }
+
+    .faq-section {
+        width: 100%;
+    }
+
+    .faq-section h2 {
+        text-align: center;
+    }
+
+    .faq-section .Q-and-A-section {
+        margin-left: 10px;
+        width: auto;
+    }
+
+    .faq-section .Q-and-A-section img {
+        right: 3%;
+    }
+
+    .faq-section .divider {
+        width: 100%;
+    }
+}
+
+
+
+
 /* Wrapper Style */
 /* .wrapper {
     width: 60%;
