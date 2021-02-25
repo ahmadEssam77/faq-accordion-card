@@ -14,22 +14,105 @@ body {
     /* overflow-y: hidden; */
 }
 
+/* New Srart */
 /* Wrapper Style */
 .wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    height: auto;
+    background-color: #fff;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 50px 10px;
+}
+
+/* Design Section */
+.design-section {
+    width: 60%;
+}
+
+
+/* FAQ Section */
+.faq-section {
+    line-height: 25px;
+    width: 40%;
+}
+
+.faq-section h2 {
+    font-weight: 700;
+    font-family: "Kumbh Sans";
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.Q-and-A-section {
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+.Q-and-A-section p {
+    color:  hsl(238, 29%, 16%);
+    font-weight: 600;
+    font-family: "Kumbh Sans";
+    font-size: 12px;
+}
+
+.Q-and-A-section p:hover {
+    color: hsl(14, 88%, 65%);
+    cursor: pointer;
+}
+
+.Q-and-A-section img {
+    float: right;
+    position: relative;
+    right: 20%;
+    top: 7px;
+}
+
+/* Adding Active class */
+.Q-and-A-section.active img {
+    transform: rotate(180deg);
+}
+
+.Q-and-A-section .answer {
+    font-size: 12px;
+    font-family: "Kumbh Sans";
+    color: hsl(240, 6%, 50%);
+    width: 70%;
+    display: none;
+}
+
+/* Adding Active Class */
+.Q-and-A-section.active .answer {
+    display: block;
+}
+
+.Q-and-A-section .divider {
+    width: 80%;
+    border: 0;
+    height: 1px;
+    background: hsl(240, 5%, 91%);
+    margin-top: 5px;
+}
+
+/* Wrapper Style */
+/* .wrapper {
     width: 60%;
     height: 500px;
-    margin: 90px auto 0 auto;  /* I'll come to this point again later */
+    margin: 90px auto 0 auto;  I'll come to this point again later
     background: #fff;
     border-radius: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    overflow: hidden;  /* I'll come to this point again later */
-}
+    overflow: hidden;  I'll come to this point again later
+} */
 
 /* Design Section Style */
 /* Adjust the designs to match the main design */
-.design-section {
+/* .design-section {
     width: 30%;
     position: relative;
     top: -50px;
@@ -53,10 +136,10 @@ body {
     position: absolute;
     top: 490px;
     left: 400px;
-}
+} */
 
 /* Faq Section Style */
-.faq-section .heading {
+/* .faq-section .heading {
     font-family: "Kumbh Sans";
     text-align: center;
     margin: 25px 0;
@@ -69,11 +152,17 @@ body {
     color: hsl(238, 29%, 16%);
     line-height: 50px;
     font-family: "Kumbh Sans";
+    cursor: pointer;
+}
+
+.faq-section p:hover {
+    color: hsl(14, 88%, 65%);
 }
 
 .faq-section .arrow {
     float: right;
     margin: 20px 0 0 25px;
+    cursor: pointer;
 }
 
 .faq-section .divider {
@@ -82,6 +171,14 @@ body {
     height: 0.5px;
 }
 
+
+.faq-section .answer {
+    font-family: "Kumbh Sans";
+    color: hsl(240, 6%, 50%);
+    font-size: 13px;
+    margin-bottom: 10px;
+    width: 50%;
+} */
 
 /* Mobile First - Media Query */
 /* @media (max-width: 377px) {
